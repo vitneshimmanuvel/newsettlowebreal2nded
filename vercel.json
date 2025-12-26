@@ -1,4 +1,15 @@
 {
   "version": 2,
-  "buildCommand": "npm install"
+  "builds": [
+    {
+      "src": "api/leads.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/leads.js"
+    }
+  ]
 }
