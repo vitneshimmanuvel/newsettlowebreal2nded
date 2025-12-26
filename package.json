@@ -1,0 +1,14 @@
+{
+  "name": "settlo-backend-v2",
+  "version": "1.0.0",
+  "description": "Settlo Backend - Lead Capture & Email",
+  "main": "api/leads.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Build complete'",
+    "start": "node api/leads.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}
